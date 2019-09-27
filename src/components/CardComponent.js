@@ -11,20 +11,21 @@ class CardComponent extends Component {
   }
   render(){
       const cardStyle = {
-        textAlign: 'center'
+        textAlign: 'center',
+        //display: 'flex'
       };
       const headStyle = {
+        textAlign: 'center',
         fontSize: '30px',
         fontStyle: 'italic',
         fontFamily: 'monospace'
       }
     const gridStyle = {
-      width: '30%',
-      height: '30%',
-      textAlign: 'left'
+      textAlign: 'left',
+      height: '530px'
     };
     const imgStyle = {
-        maxHeight: '250px'
+        maxHeight: '160px'
     }
     const metaStyle = {
         paddingTop: '5px',
@@ -34,8 +35,9 @@ class CardComponent extends Component {
         paddingTop: '3px'
     }
     return (
-      <Card style={cardStyle}>
+      <div>
         <h1 style={headStyle}>Top five ice-cream parlors in your town</h1>
+      <Card style={cardStyle}>
       {this.props.cardLists.map( item => (
       <Card.Grid style={gridStyle} key={item.id}>
       <Card
@@ -51,6 +53,7 @@ class CardComponent extends Component {
     </Card.Grid>
   ))}
   </Card>
+  </div>
   );
   }
 }
