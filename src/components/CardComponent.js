@@ -11,8 +11,7 @@ class CardComponent extends Component {
   }
   render(){
       const cardStyle = {
-        textAlign: 'center',
-        //display: 'flex'
+        textAlign: 'center'
       };
       const headStyle = {
         textAlign: 'center',
@@ -25,7 +24,8 @@ class CardComponent extends Component {
       height: '530px'
     };
     const imgStyle = {
-        maxHeight: '160px'
+        maxHeight: '160px',
+        objectFit: 'cover'
     }
     const metaStyle = {
         paddingTop: '5px',
@@ -36,7 +36,7 @@ class CardComponent extends Component {
     }
     return (
       <div>
-        <h1 style={headStyle}>Top five ice-cream parlors in your town</h1>
+        <h1 style={headStyle}>Top six ice-cream parlors in your town</h1>
       <Card style={cardStyle}>
       {this.props.cardLists.map( item => (
       <Card.Grid style={gridStyle} key={item.id}>

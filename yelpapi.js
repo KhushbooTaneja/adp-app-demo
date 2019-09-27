@@ -23,7 +23,7 @@ const searchRequest = {
   term:'icecream',
   location: 'Alpharetta',
   sort_by: 'rating',
-  limit: 5
+  limit: 6
 };
 
 const client = yelp.client(apiKey);
