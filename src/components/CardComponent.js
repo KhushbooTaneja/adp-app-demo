@@ -47,9 +47,9 @@ class CardComponent extends Component {
       <Meta style={metaStyle} title={item.name} description={`${item.street},${item.city}`} />
     </Card>
     <h3 style={paddingTop}>TOP REVIEWS</h3>
-    <p>$<b>{item.review[0].userName}</b> says "${item.review[0].text}"</p>
-    <p>$<b>{item.review[1].userName}</b> says "${item.review[1].text}"</p>
-    <p>$<b>{item.review[2].userName}</b> says "${item.review[2].text}"</p>
+    <p><b>{item.review[0].userName}</b> says "{item.review[0].text}"</p>
+    <p><b>{item.review[1].userName}</b> says "{item.review[1].text}"</p>
+    <p><b>{item.review[2].userName}</b> says "{item.review[2].text}"</p>
     </Card.Grid>
   ))}
   </Card>
